@@ -17,8 +17,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the sample app!"
       redirect_to @user
     else
-      flash[:danger] = "Account registration failed"
-      render :new
+      flash.now[:danger] = "Account registration failed"
     end
   end
 
