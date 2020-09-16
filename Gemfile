@@ -16,7 +16,6 @@ gem "bcrypt", "~> 3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 
 group :development, :test do
-  gem "dotenv-rails", groups: [:development, :test]
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
 
